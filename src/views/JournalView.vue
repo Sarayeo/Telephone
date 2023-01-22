@@ -1,7 +1,7 @@
 <template>
   <div class="Journal">
 <!--    <img alt="Vue logo" src="../assets/logo.png">-->
-    <JournalPad msg="Journal d'appels"/>
+    <JournalPad />
   </div>
 </template>
 
