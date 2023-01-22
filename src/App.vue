@@ -1,12 +1,29 @@
 <template>
+  <h1> Welcome To My kingdom</h1>
   <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/">Home</router-link> 
+    <router-link to="/about">About</router-link> 
+    <router-link to="/contact">Contact</router-link>
   </nav>
   <router-view/>
 </template>
+<script>
 
-<style>
+export default{
+  name:'APP',
+  data(){
+    return{
+      compteur: 0
+    }
+  },
+  methods: {
+    increment() {
+      this.compteur++
+    }
+  }
+}
+</script>
+<style >
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
